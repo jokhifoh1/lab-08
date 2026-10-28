@@ -2,6 +2,7 @@ package com.example.lab_8
 
 //class for abstractly representing a wizard
 class Wizard(val name: String, var mana: Int, var spellPower: Int) {
+
     fun castSpell(spell: String): Int {
         when (spell) {
             "Explosion" -> {
@@ -21,4 +22,6 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
             }
         }
     }
+
+    fun restoreMana(amount: Int) { }
 }
