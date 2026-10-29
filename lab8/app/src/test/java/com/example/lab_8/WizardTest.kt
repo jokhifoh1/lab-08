@@ -57,7 +57,7 @@ class WizardTest {
 
     @Test
     fun  train_wizardDoesNotHaveEnoughManaToLevelUp() {
-        evilWizard.mana = 4 //Set mana to 4, which is not enough to level up
+        evilWizard.mana = 4 // Set mana to 4, which is not enough to level up
         evilWizard.train() // Wizard does not have enough mana to level up
 
         assertEquals(10, evilWizard.spellPower) // spellPower is still 10
